@@ -18,11 +18,11 @@
 				alert("I love Fang Ruhui");
 				var cen = document.createElement("center");
 				document.body.appendChild(cen);
-				cen.appendChild(oBtn);
+				cen.appendChild(oBtn2);
 			}
 			var que = document.getElementById("que");
-			var btn = document.getElementById("btn2");
-			btn.onclick = function(){alert("收到啦，mua~")}
+			var btn3 = document.getElementById("btn3");
+			btn3.onclick = function(){alert("收到啦，mua~")}
 			que.onfocus = function(){
 				if (this.value == "你现在最想对我说什么"){
 					this.value = "";
@@ -37,8 +37,8 @@
 	</script>
 </head>
 <body>
-	<input type="button" id="btn2" value="love"  /><br/><br/>
-	<p>宝贝喜欢吃什么呀</p>
+	
+	<span>宝贝喜欢吃什么呀</span>
 	<div>
 		<label><input type="radio" name="fruit" value="香蕉">香蕉</label>	
 		<label><input type="radio" name="fruit" value="苹果" checked="True">苹果</label>
@@ -46,9 +46,9 @@
 
 	</div>
 	<input id="btn1" type="button" value="确定"/><br/><br/>
-	<u id = "u">段琦乐❤方汝慧</u><br />
-	<input type="button" id="btn" value="love"  /><br/><br/>
+	<u id = "u">段琦乐❤方汝慧</u><br /><br/>
 	<input type = "text" id = "que" value="你现在最想对我说什么" style="color:9C9B9B"/>
-	<input type = "button" id = "btn2" value = "发送给老公"/>
+	<input type = "button" id = "btn3" value = "发送给老公"/><br/><br/>
+	<input type="button" id="btn2" value="love"  />
 </body>
-</html>		
+</html>
