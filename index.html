@@ -3,7 +3,7 @@
 	<title></title>
 	<script>
 		window.onload=function(){
-			var oBtn = document.getElementById("btn");
+			var oBtn = document.getElementById("btn1");
 			var oFruit = document.getElementsByName("fruit");
 			oBtn.onclick = function(){
 				for (var i=0;i<oFruit.length;i++){
@@ -12,7 +12,7 @@
 					}
 				}
 			};
-			var oBtn = document.getElementById("btn");
+			var oBtn = document.getElementById("btn2");
 			var div = document.getElementById("div");
 			oBtn.onclick=function(){
 				alert("I love Fang Ruhui");
@@ -24,7 +24,7 @@
 	</script>
 </head>
 <body>
-	<input type="button" id="btn" value="love"  /><br/><br/>
+	<input type="button" id="btn2" value="love"  /><br/><br/>
 	<p>宝贝喜欢吃什么呀</p>
 	<div>
 		<label><input type="radio" name="fruit" value="香蕉">香蕉</label>	
@@ -32,6 +32,6 @@
 		<label><input type="radio" name="fruit" value="西瓜">西瓜</label>
 
 	</div>
-	<input id="btn" type="button" value="确定"/>
+	<input id="btn1" type="button" value="确定"/>
 </body>
 </html>		
