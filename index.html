@@ -3,22 +3,35 @@
 	<title></title>
 	<script>
 		window.onload=function(){
-			var oBtn = document.getElementById("btn1");
+			var oBtn1 = document.getElementById("btn1");
 			var oFruit = document.getElementsByName("fruit");
-			oBtn.onclick = function(){
+			oBtn1.onclick = function(){
 				for (var i=0;i<oFruit.length;i++){
 					if (oFruit[i].checked){
 						alert(oFruit[i].value);
 					}
 				}
 			};
-			var oBtn = document.getElementById("btn2");
+			var oBtn2 = document.getElementById("btn2");
 			var div = document.getElementById("div");
-			oBtn.onclick=function(){
+			oBtn2.onclick=function(){
 				alert("I love Fang Ruhui");
 				var cen = document.createElement("center");
 				document.body.appendChild(cen);
 				cen.appendChild(oBtn);
+			}
+			var que = document.getElementById("que");
+			var btn = document.getElementById("btn2");
+			btn.onclick = function(){alert("收到啦，mua~")}
+			que.onfocus = function(){
+				if (this.value == "你现在最想对我说什么"){
+					this.value = "";
+				}
+			}
+			que.onblur = function(){
+				if (this.value == ""){
+					this.value = "你现在最想对我说什么"
+				}
 			}
 		}
 	</script>
@@ -32,6 +45,10 @@
 		<label><input type="radio" name="fruit" value="西瓜">西瓜</label>
 
 	</div>
-	<input id="btn1" type="button" value="确定"/>
+	<input id="btn1" type="button" value="确定"/><br/><br/>
+	<u id = "u">段琦乐❤方汝慧</u><br />
+	<input type="button" id="btn" value="love"  /><br/><br/>
+	<input type = "text" id = "que" value="你现在最想对我说什么" style="color:9C9B9B"/>
+	<input type = "button" id = "btn2" value = "发送给老公"/>
 </body>
 </html>		
